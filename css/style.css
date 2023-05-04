@@ -88,15 +88,15 @@ a:hover {
 /* ======== CSS Conferencia page ================== */
 .banner__info_conferencia{
     position: absolute;
-    top:65%;
+    top:55%;
     right: 5%;
-    color: #fff; 
+    color: #fff;
+    z-index: 100;
 }
 .banner_carousel{
     background-color: #000;
     padding: 0;
-    z-index: 100;
-    opacity: 100%;
+    z-index: -100;
 }
 /* ======== Fin CSS Conferencia page ================== */
 
