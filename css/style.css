@@ -1,0 +1,196 @@
+ /* -----Custom properties---- */
+ :root{
+    --color-1: rgba(28, 27, 27, 0.88);
+    --color-1-var: rgb(112, 112, 112);
+    --color-2: rgba(35, 239, 8, 0.886);
+    --color-3: rgba(73, 198, 16, 0.8);
+
+}
+/* -----Reset Styles---- */
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+a {
+    color: rgba(255, 255, 255, 0.85);
+    transition: all .3s ease-out;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-2)
+}
+
+/* -----Bootstrap Styles---- */
+.bg-dark{
+    background-color: var(--color-1) !important;
+}
+.navbar-brand img{
+    width: auto;
+    height: 3.5rem;
+}
+.navbar-dark .navbar-toggler{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28112, 112, 112, .55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all .3s ease-out;
+}
+.navbar-dark .navbar-toggler:hover{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    opacity: .88;
+}
+
+.nav-item {
+    padding-left: .5rem;
+    transition: all .3s ease-out;
+}
+.nav-item:hover{
+    background-color: var(--color-1-var);
+}
+
+.nav-link{
+    color: var(--color-1-var);
+}
+
+.last-link{
+    color: var(--color-2);
+}
+.card-text{
+    color: var(--color-1-var);
+    text-align: justify;
+}
+.row{
+    padding: 0;
+}
+
+/* -----My Styles---- */
+.section-1{
+    background-image: url(../img/ba1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -100;
+}
+.banner{    
+    height: 50rem;   
+    background-color: var(--color-1);
+    opacity: 50%;
+    padding: 0;
+}
+.banner__info{
+    position: absolute;
+    top:65%;
+    right: 5%;
+    color: #fff;
+}
+.banner__info span {
+    font-size: 1.3rem ;
+}
+.banner__btn__color{
+    background-color: var(--color-3);
+    color: #fff;
+}
+/* ======== CSS Conferencia page ================== */
+.banner__info_conferencia{
+    position: absolute;
+    top:65%;
+    right: 5%;
+    color: #fff; 
+}
+.banner_carousel{
+    background-color: #000;
+    padding: 0;
+    z-index: 100;
+    opacity: 100%;
+}
+/* ======== Fin CSS Conferencia page ================== */
+
+.section-2 span, h3{
+    font-size: 1rem;
+    color: var(--color-1-var);
+    text-transform: uppercase;
+}
+h3{
+    color:#000;
+    font-size: 1.5rem;
+}
+
+.section-2__card__body{
+    text-align: justify;
+}
+.section-3__title{
+    color: #fff ;
+}
+.section-3__contenido__a{
+    background-image: url(../img/honolulu.jpg);
+    background-size: cover;
+    height: 30rem;
+    width: 100%;
+}
+.section-3__contenido__b{
+    background-color: var(--color-1);
+    color: #fff;
+    padding-top: 2rem;
+}
+
+.section-4 span{
+    font-size: .8rem;
+    color: var(--color-1-var);
+    text-transform: uppercase;
+    width: 100%;   
+}
+.section-4 h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#section-4__underline{
+    text-transform: lowercase;
+    color:#000;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.section-4 textarea::placeholder {
+    color: var(--color-1-var);
+    font-size: 1.5em;
+}
+.section-4__btn{
+    background-color: var(--color-3);
+    color: #fff;
+}
+
+
+.bgfooter {
+    background: linear-gradient(to left, #000428, #004e92);
+}
+
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .section_3_contenedor{
+        display: grid;
+        flex-direction: column;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .nav-item:hover{
+        background-color: transparent;
+    }
+  
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+ 
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+ }
+
+
