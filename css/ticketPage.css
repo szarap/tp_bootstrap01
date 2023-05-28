@@ -51,13 +51,19 @@
     font-size: 2rem;
 }
 
-.hide{
+
+/* .hide{
     display: none;
-}
+    transition: ease-in;
+} */
 
 .container-resultado {
-    background-color: aqua;
+    margin-top: 2rem;
+    padding: .8rem;
+    background-color: rgb(163, 211, 239);
     font-size: 1.5rem;
+    text-align: start;
+    color: rgb(17, 99, 146);
 }
 
 
