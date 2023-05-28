@@ -1,6 +1,6 @@
 const nombre = document.getElementById('nombre');
 const apellido = document.getElementById('apellido');
-const correo = document.getElementById('email');
+const email = document.getElementById('email');
 const cantidad = document.getElementById('cantidad');
 const categoria = document.getElementById('categoria');
 const resumen_container = document.getElementById('div-resumen-container');
@@ -18,7 +18,7 @@ btn_borrar.addEventListener('click', resetForm);
 
 function totalDescuento(){
     //if (!nombre.value || !apellido.value || !cantidad.value || !ElementInternals.value){
-   if (nombre.value ==="" || apellido.value ==="" || cantidad.value === "" || ElementInternals.value === "" ){
+   if (nombre.value ==="" || apellido.value ==="" || cantidad.value === "" || email.value === "" || ElementInternals.value === "" ){
       resumen_container.classList.add('hide');
       error_message.classList.remove('hide');
       error_message.classList.add('container-resultado-error')
