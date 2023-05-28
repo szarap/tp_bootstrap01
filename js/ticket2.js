@@ -1,3 +1,4 @@
+const form = document.getElementById('form');
 const nombre = document.getElementById('nombre');
 const apellido = document.getElementById('apellido');
 const email = document.getElementById('email');
@@ -42,11 +43,7 @@ function totalDescuento(){
 function resetForm() {
    resumen_container.classList.add('hide');
    error_message.classList.add('hide');
-   nombre.value = "";
-   apellido.value = "";
-   correo.value ="";
-   cantidad.value ="";
-   total.innerText = "";
+   form.reset();
 }
 
  
