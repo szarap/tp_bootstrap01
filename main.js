@@ -1,0 +1,1 @@
+import {ticket2} from './js/index'

@@ -3,6 +3,8 @@ const apellido = document.getElementById('apellido');
 const correo = document.getElementById('email');
 const cantidad = document.getElementById('cantidad');
 const categoria = document.getElementById('categoria');
+const resumen_container = document.getElementById('div-resumen-container');
+const error_message = document.getElementById('error-message');
 const total = document.getElementById('total');
 const btn_resumen = document.getElementById('btn-resumen');
 const btn_borrar = document.getElementById('btn-borrar');
@@ -17,8 +19,15 @@ btn_borrar.addEventListener('click', resetForm);
 function totalDescuento(){
     //if (!nombre.value || !apellido.value || !cantidad.value || !ElementInternals.value){
    if (nombre.value ==="" || apellido.value ==="" || cantidad.value === "" || ElementInternals.value === "" ){
-      alert('Debe completar todos los campos');
+      resumen_container.classList.add('hide');
+      error_message.classList.remove('hide');
+      error_message.classList.add('container-resultado-error')
       return
+   }else{
+      error_message.classList.add('hide');
+      resumen_container.classList.remove('hide');
+      resumen_container.classList.add('container-resultado');
+
    }
  
    if (categoria.value === 'estudiante') {
@@ -31,6 +40,8 @@ function totalDescuento(){
 }
 
 function resetForm() {
+   resumen_container.classList.add('hide');
+   error_message.classList.add('hide');
    nombre.value = "";
    apellido.value = "";
    correo.value ="";
